@@ -34,16 +34,19 @@
           />
         </svg>
       </a>
-      <nav class="navigation">
-        <ul class="nav__list">
+
+      <nav class="navbar">
+        <ul class="nav-links">
           <li><a href="#">catalogue</a></li>
           <li><a href="#">fashion</a></li>
           <li><a href="#">favourite</a></li>
           <li><a href="#">lifestyle</a></li>
         </ul>
-        <a href="#" class="sign">sign up</a>
+        <button class="signup-btn">Sign Up</button>
+        <div class="burger-menu">&#9776;</div>
       </nav>
     </header>
+
     <main>
       <section id="main__section" class="block__width">
         <div class="main-text-block">
@@ -54,6 +57,7 @@
           <a href="#" class="shop_button">Shop Now</a>
         </div>
       </section>
+
       <section id="brands">
         <div class="container">
           <svg
@@ -304,6 +308,15 @@
           </div>
         </div>
       </section>
+      <section id="main__section" class="block__width payday">
+        <div class="main-text-block">
+          <h1 class="main__header">
+            LET’S EXPLORE <span class="unique">UNIQUE</span> CLOTHES.
+          </h1>
+          <p class="sm-header">Live for Influential and Innovative fashion!</p>
+          <a href="#" class="shop_button">Shop Now</a>
+        </div>
+      </section>
       <saection id="app">
         <div class="container app">
           <div class="col">
@@ -336,5 +349,15 @@
     <footer class="footer">
       <div class="container">sjdkahsdjhk</div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const burger = document.querySelector(".burger-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        burger.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>

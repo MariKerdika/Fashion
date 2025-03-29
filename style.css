@@ -194,3 +194,89 @@ h1 {
   background-position: bottom right;
   background-repeat: no-repeat;
 }
+.payday .main-text-block {
+  background-image: url(./images/banner.png);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links a:hover {
+  color: #ebd96b;
+  transition: 0.5s;
+}
+.signup-btn {
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.signup-btn:hover {
+  background: #9f3131;
+}
+
+.burger-menu {
+  font-size: 28px;
+  color: #000000;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .navbar {
+    position: relative;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #444;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+  .signup-btn {
+    margin-right: 20px;
+  }
+  .nav-links li {
+    padding: 10px 0;
+  }
+
+  .burger-menu {
+    display: block;
+    margin-right: 20px;
+  }
+}
